@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_KEY = "6cd6a45eade0e6dfa5c8fde5a62dd681"; 
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; 
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 function App() {
